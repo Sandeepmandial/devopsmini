@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/<your-username>/<your-repo>.git'
+                git 'https://github.com/Sandeepmandial/devopsmini.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t yourdockerhubusername/cicd-demo:${BUILD_NUMBER} .'
+                sh 'docker build -t sandeepthakhur16@gmail.com/cicd-demo:${BUILD_NUMBER} .'
             }
         }
 
